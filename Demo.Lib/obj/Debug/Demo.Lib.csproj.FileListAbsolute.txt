@@ -1,0 +1,14 @@
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\Demo.Lib.dll.config
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\Demo.Lib.dll
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\Demo.Lib.pdb
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\AutoMapper.dll
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\EntityFramework.dll
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\EntityFramework.SqlServer.dll
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\Newtonsoft.Json.dll
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\AutoMapper.xml
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\EntityFramework.xml
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\EntityFramework.SqlServer.xml
+E:\Others\OrleansDemo\Demo.Lib\bin\Debug\Newtonsoft.Json.xml
+E:\Others\OrleansDemo\Demo.Lib\obj\Debug\Demo.Lib.csproj.CoreCompileInputs.cache
+E:\Others\OrleansDemo\Demo.Lib\obj\Debug\Demo.Lib.dll
+E:\Others\OrleansDemo\Demo.Lib\obj\Debug\Demo.Lib.pdb

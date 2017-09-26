@@ -1,0 +1,325 @@
+[2017-09-25 10:07:58.497 GMT     1	INFO   	100404	Silo	10.1.10.102:0]	Silo starting with GC settings: ServerGC=False GCLatencyMode=Interactive	
+[2017-09-25 10:07:58.500 GMT     1	WARNING	100405	Silo	10.1.10.102:0]	Note: Silo not running with ServerGC turned on or with GCLatencyMode.Batch enabled - recommend checking app config : <configuration>-<runtime>-<gcServer enabled="true"> and <configuration>-<runtime>-<gcConcurrent enabled="false"/>	
+[2017-09-25 10:07:58.502 GMT     1	WARNING	100405	Silo	10.1.10.102:0]	Note: ServerGC only kicks in on multi-core systems (settings enabling ServerGC have no effect on single-core machines).	
+[2017-09-25 10:07:58.503 GMT     1	INFO   	100403	Silo	10.1.10.102:0]	-------------- Initializing Secondary silo on host DESKTOP-0UHC7MM MachineName DESKTOP-0UHC7MM at 10.1.10.102:0, gen 244030078 --------------	
+[2017-09-25 10:07:58.532 GMT     1	INFO   	100415	Silo	10.1.10.102:0]	Starting silo Default with the following configuration= 
+Config File Name: E:\Others\OrleansDemo\Server\bin\Debug\OrleansConfiguration.xml
+Host: DESKTOP-0UHC7MM
+Start time: 2017-09-25 10:07:58.504 GMT
+Primary node: null
+Platform version info:
+   Orleans version: 1.5.1.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: E:\Others\OrleansDemo\Server\bin\Debug\Server.exe.Config
+   GC Type=Client GCLatencyMode=Interactive
+Global configuration:
+   System Ids:
+      ServiceId: 00000000-0000-0000-0000-000000000000
+      DeploymentId: 
+   Subnet: 
+   Seed nodes: 
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Silo Sender queues: 4
+       Gateway Sender queues: 4
+       Client Drop Timeout: 00:01:00
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Maximum forward count: 2
+       Fallback serializer: 
+   Liveness:
+      LivenessEnabled: True
+      LivenessType: MembershipTableGrain
+      ProbeTimeout: 00:00:10
+      TableRefreshTimeout: 00:01:00
+      DeathVoteExpirationTimeout: 00:02:00
+      NumMissedProbesLimit: 3
+      NumProbedSilos: 3
+      NumVotesForDeathDeclaration: 2
+      UseLivenessGossip: True
+      ValidateInitialConnectivity: True
+      IAmAliveTablePublishTimeout: 00:05:00
+      NumMissedTableIAmAliveLimit: 2
+      MaxJoinAttemptTime: 00:05:00
+      ExpectedClusterSize: 20
+   MultiClusterNetwork: N/A
+   SystemStore:
+      SystemStore ConnectionString: null
+      Reminders ConnectionString: null
+   Application:
+      Defaults:
+         Deactivate if idle for: 02:00:00
+
+   PlacementStrategy: 
+         Default Placement Strategy: RandomPlacement
+         Deployment Load Publisher Refresh Time: 00:00:01
+         Activation CountBased Placement Choose Out Of: 2
+   Grain directory cache:
+      Maximum size: 1000000 grains
+      Initial TTL: 00:00:30
+      Maximum TTL: 00:04:00
+      TTL extension factor: 2.00
+      Directory Caching Strategy: Adaptive
+   Grain directory:
+      Lazy deregistration delay: 00:01:00
+      Client registration refresh: 00:05:00
+   Reminder Service:
+       ReminderServiceType: ReminderTableGrain
+   Consistent Ring:
+       Use Virtual Buckets Consistent Ring: True
+       Num Virtual Buckets Consistent Ring: 30
+   Providers:
+       No providers configured.
+Silo configuration:
+   Silo Name: Default
+   Generation: 244030078
+   Host Name or IP Address: 
+   DNS Host Name: DESKTOP-0UHC7MM
+   Port: 0
+   Subnet: 
+   Preferred Address Family: InterNetwork
+   IsGatewayNode: False
+   IsPrimaryNode: False
+   Scheduler: 
+         Max Active Threads: 4
+         Processor Count: 4
+         Delay Warning Threshold: 00:00:10
+         Activation Scheduling Quantum: 00:00:00.1000000
+         Turn Warning Length Threshold: 00:00:00.2000000
+         Inject More Worker Threads: False
+         MinDotNetThreadPoolSize: 200
+         .NET thread pool sizes - Min: Worker Threads=4 Completion Port Threads=4
+         .NET thread pool sizes - Max: Worker Threads=2047 Completion Port Threads=1000
+         .NET ServicePointManager - DefaultConnectionLimit=200 Expect100Continue=False UseNagleAlgorithm=False
+   Load Shedding Enabled: False
+   Load Shedding Limit: 95
+   SiloShutdownEventName: 
+   Debug: 
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: E:\Others\OrleansDemo\Server\bin\Debug\Default-2017-09-25-10.07.58.337Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+
+	
+[2017-09-25 10:08:00.358 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	Searching for assemblies in E:\Others\OrleansDemo\Server\bin\Debug...	
+[2017-09-25 10:08:00.431 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Demo.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.437 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Demo.Interface.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.744 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.881 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.890 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.897 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.898 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Microsoft.Win32.Primitives.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.936 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Newtonsoft.Json.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.938 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2017-09-25 10:08:00.940 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.948 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2017-09-25 10:08:00.954 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\OrleansTelemetryConsumers.Counters.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.956 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.AppContext.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.972 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Collections.Immutable.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.975 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Console.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.979 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.986 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.988 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Diagnostics.StackTrace.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.990 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Globalization.Calendars.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.994 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.IO.Compression.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.997 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.IO.Compression.ZipFile.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:00.999 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.IO.FileSystem.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.002 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.IO.FileSystem.Primitives.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.013 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Net.Http.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.015 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Net.Sockets.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.043 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.046 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.049 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Security.Cryptography.Algorithms.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.051 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Security.Cryptography.Encoding.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.057 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Security.Cryptography.Primitives.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.059 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.062 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Text.Encoding.CodePages.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.063 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Threading.Thread.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.070 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.ValueTuple.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.075 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Xml.ReaderWriter.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.076 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Xml.XmlDocument.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.078 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Xml.XPath.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.080 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	User assembly ignored: E:\Others\OrleansDemo\Server\bin\Debug\System.Xml.XPath.XDocument.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-09-25 10:08:01.081 GMT     1	WARNING	101705	AssemblyLoader.Silo	10.1.10.102:0]	Unable to find directory E:\Others\OrleansDemo\Server\bin\Debug\Applications; skipping.	
+[2017-09-25 10:08:01.082 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	Loading assembly E:\Others\OrleansDemo\Server\bin\Debug\OrleansProviders.dll...	
+[2017-09-25 10:08:01.117 GMT     1	INFO   	100000	AssemblyLoader.Silo	10.1.10.102:0]	1 assemblies loaded.	
+[2017-09-25 10:08:02.225 GMT     1	INFO   	100000	Scheduler.OrleansTaskScheduler	10.1.10.102:0]	Starting OrleansTaskScheduler with 4 Max Active application Threads and 1 system thread.	
+[2017-09-25 10:08:02.250 GMT     1	INFO   	101010	Runtime.Messaging.IncomingMessageAcceptor	10.1.10.102:0]	Opened a listening socket at address 10.1.10.102:29370	
+[2017-09-25 10:08:02.288 GMT     1	INFO   	100000	VirtualBucketsRingProvider	10.1.10.102:0]	Starting VirtualBucketsRingProvider on silo S10.1.10.102:0:244030078/x08E1FE64.	
+[2017-09-25 10:08:02.319 GMT     1	INFO   	103003	VirtualBucketsRingProvider	10.1.10.102:0]	Added Server S10.1.10.102:0:244030078/x08E1FE64. Current view: [S10.1.10.102:0:244030078 -> <MultiRange: Size=x100000000, %Ring=100.000%>]	
+[2017-09-25 10:08:02.325 GMT     1	INFO   	103005	VirtualBucketsRingProvider	10.1.10.102:0]	-NotifyLocalRangeSubscribers about old <(0 0], Size=x100000000, %Ring=100.000%> new <MultiRange: Size=x100000000, %Ring=100.000%> increased? True	
+[2017-09-25 10:08:02.352 GMT     1	INFO   	100000	Silo	10.1.10.102:0]	Skip multicluster oracle creation (no multicluster network configured)	
+[2017-09-25 10:08:02.357 GMT     1	INFO   	100422	Silo	10.1.10.102:0]	-------------- Started silo S10.1.10.102:0:244030078, ConsistentHashCode 8E1FE64 --------------	
+[2017-09-25 10:08:02.359 GMT     1	INFO   	100288	OrleansSiloHost	10.1.10.102:0]	Successfully initialized Orleans silo 'Default' as a Secondary node.	
+[2017-09-25 10:08:02.376 GMT     1	INFO   	100441	OrleansSiloHost	10.1.10.102:0]	Silo shutdown event name: Default-Shutdown	
+[2017-09-25 10:08:02.378 GMT     1	INFO   	100442	OrleansSiloHost	10.1.10.102:0]	Created and set shutdown event Default-Shutdown	
+[2017-09-25 10:08:02.389 GMT     1	INFO   	100401	Silo	10.1.10.102:0]	Silo Start()	
+[2017-09-25 10:08:02.391 GMT     1	INFO   	100430	Silo	10.1.10.102:0]	Configured ThreadPool.SetMinThreads() to values: 200,200. Previous values are: 4,4.	
+[2017-09-25 10:08:02.392 GMT     1	INFO   	100436	Silo	10.1.10.102:0]	Configured .NET ServicePointManager to Expect100Continue=False, DefaultConnectionLimit=200, UseNagleAlgorithm=False to improve Azure storage performance.	
+[2017-09-25 10:08:02.447 GMT     1	INFO   	101711	AssemblyLoader.Silo	10.1.10.102:0]	Loaded grain type summary for 8 types: 
+Grain class Orleans.LogConsistency.Orleans.LogConsistency.LogConsistentGrainBase<TView> [-2062750837 (0x850CEB8B)] from Orleans.dll implementing interfaces: 
+Grain class Orleans.Providers.Orleans.Providers.MemoryStreamQueueGrain [1359359215 (0x51062CEF)] from OrleansProviders.dll implementing interfaces: Orleans.Providers.Orleans.Providers.IMemoryStreamQueueGrain [1158152105 (0x4507FFA9)]
+Grain class Orleans.Runtime.Management.Orleans.Runtime.Management.ManagementGrain [1954798034 (0x7483D9D2)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Orleans.Runtime.IManagementGrain [-1734666656 (0x989B1660)]
+Grain class Orleans.Runtime.MembershipService.Orleans.Runtime.MembershipService.GrainBasedMembershipTable [-2103923544 (0x8298ACA8)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IMembershipTableGrain [-1256503757 (0xB51B4633)]
+Grain class Orleans.Runtime.ReminderService.Orleans.Runtime.ReminderService.GrainBasedReminderTable [-55315191 (0xFCB3F509)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IReminderTableGrain [-1135060418 (0xBC585A3E)]
+Grain class Orleans.Runtime.Versions.Orleans.Runtime.Versions.VersionStoreGrain [331003096 (0x13BAB4D8)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Versions.Orleans.Runtime.Versions.IVersionStoreGrain [-297600501 (0xEE42FA0B)], Orleans.Orleans.IGrainWithStringKey [-1277021679 (0xB3E23211)]
+Grain class Orleans.Storage.Orleans.Storage.MemoryStorageGrain [819348208 (0x30D642F0)] from OrleansRuntime.dll implementing interfaces: Orleans.Storage.Orleans.Storage.IMemoryStorageGrain [577125491 (0x22663C73)]
+Grain class Orleans.Streams.Orleans.Streams.PubSubRendezvousGrain [1903070868 (0x716E8E94)] from OrleansRuntime.dll implementing interfaces: Orleans.Streams.Orleans.Streams.IPubSubRendezvousGrain [1746702088 (0x681C8F08)]
+	
+[2017-09-25 10:08:02.480 GMT    12	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/System.5	10.1.10.102:0]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/System.5 on managed thread 12	
+[2017-09-25 10:08:02.480 GMT    10	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/2	10.1.10.102:0]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/2 on managed thread 10	
+[2017-09-25 10:08:02.501 GMT    11	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/3	10.1.10.102:0]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/3 on managed thread 11	
+[2017-09-25 10:08:02.510 GMT    14	INFO   	100000	Runtime.Messaging.IncomingMessageAcceptor	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAcceptor on managed thread 14	
+[2017-09-25 10:08:02.480 GMT     9	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/1	10.1.10.102:0]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/1 on managed thread 9	
+[2017-09-25 10:08:02.520 GMT    16	INFO   	100000	Runtime.Messaging.SiloMessageSender/SystemSender	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/SystemSender on managed thread 16	
+[2017-09-25 10:08:02.549 GMT    20	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Ping	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Ping on managed thread 20	
+[2017-09-25 10:08:02.515 GMT    15	INFO   	100000	Runtime.Messaging.SiloMessageSender/PingSender	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/PingSender on managed thread 15	
+[2017-09-25 10:08:02.554 GMT    19	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/System	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/System on managed thread 19	
+[2017-09-25 10:08:02.501 GMT     8	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/0	10.1.10.102:0]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/0 on managed thread 8	
+[2017-09-25 10:08:02.564 GMT    21	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Application	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Application on managed thread 21	
+[2017-09-25 10:08:02.566 GMT    14	INFO   	100328	Runtime.Messaging.IncomingMessageAcceptor	10.1.10.102:0]	Stopping AsyncAgent Runtime.Messaging.IncomingMessageAcceptor that runs on managed thread 14	
+[2017-09-25 10:08:02.560 GMT     1	INFO   	100000	Orleans.GrainDirectory.LocalGrainDirectory	10.1.10.102:0]	Start (SeverityLevel=Info)	
+[2017-09-25 10:08:02.579 GMT    17	INFO   	100000	Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1	10.1.10.102:0]	Starting AsyncAgent Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1 on managed thread 17	
+[2017-09-25 10:08:02.580 GMT    18	INFO   	100000	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	10.1.10.102:0]	Starting AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer on managed thread 18	
+[2017-09-25 10:08:02.610 GMT    18	INFO   	100328	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	10.1.10.102:0]	Stopping AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer that runs on managed thread 18	
+[2017-09-25 10:08:02.643 GMT     1	INFO   	100000	ReminderFactory	10.1.10.102:0]	Creating reminder grain service for type=Orleans.OrleansCodeGenReminderTableGrainReference	
+[2017-09-25 10:08:02.668 GMT     8	INFO   	100507	Catalog	10.1.10.102:0]	Before collection#1: memory=8MB, #activations=0, collector=<#Activations=0, #Buckets=0, buckets=[]>.	
+[2017-09-25 10:08:02.671 GMT    12	INFO   	100603	MembershipOracle	10.1.10.102:0]	MembershipOracle starting on host = DESKTOP-0UHC7MM address = S10.1.10.102:0:244030078 at 2017-09-25 10:08:02.259 GMT, backOffMax = 00:00:20	
+[2017-09-25 10:08:02.672 GMT     8	INFO   	100508	Catalog	10.1.10.102:0]	After collection#1: memory=8MB, #activations=0, collected 0 activations, collector=<#Activations=0, #Buckets=0, buckets=[]>, collection time=00:00:00.0066175.	
+[2017-09-25 10:08:02.753 GMT    12	ERROR  	100071	Dispatcher	10.1.10.102:0]	!!!!!!!!!! SelectTarget failed with MembershipTableGrain cannot run without Seed node - please check your silo configuration file and make sure it specifies a SeedNode element.  Alternatively, you may want to use AzureTable for LivenessType.
+参数名: grainId = MembershipTableGrain	
+Exc level 0: System.ArgumentException: MembershipTableGrain cannot run without Seed node - please check your silo configuration file and make sure it specifies a SeedNode element.  Alternatively, you may want to use AzureTable for LivenessType.
+参数名: grainId = MembershipTableGrain
+   在 Orleans.Runtime.GrainDirectory.LocalGrainDirectory.CalculateTargetSilo(GrainId grainId, Boolean excludeThisSiloIfStopping)
+   在 Orleans.Runtime.GrainDirectory.LocalGrainDirectory.LocalLookup(GrainId grain, AddressesAndTag& result)
+   在 Orleans.Runtime.Catalog.FastLookup(GrainId grain, AddressesAndTag& addresses)
+   在 Orleans.Runtime.Placement.PlacementRuntimeExtensions.Lookup(IPlacementRuntime this, GrainId grainId)
+   在 Orleans.Runtime.Placement.RandomPlacementDirector.<OnSelectActivation>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Placement.PlacementDirectorsManager.<SelectOrAddActivation>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Dispatcher.<AddressMessage>d__37.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Dispatcher.<AsyncSendMessage>d__34.MoveNext()
+[2017-09-25 10:08:02.781 GMT    23	INFO   	100000	Runtime.Messaging.SiloMessageSender/AppMsgsSender_0	10.1.10.102:0]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/AppMsgsSender_0 on managed thread 23	
+[2017-09-25 10:08:07.793 GMT    23	WARNING	101021	Runtime.Messaging.SiloMessageSender/AppMsgsSender_0	10.1.10.102:0]	Exception getting a sending socket to endpoint S10.1.10.102:0:244030078	
+Exc level 0: System.TimeoutException: Connection to 10.1.10.102:0 could not be established in 00:00:05
+   在 Orleans.Runtime.SocketManager.Connect(Socket s, IPEndPoint endPoint, TimeSpan connectionTimeout)
+   在 Orleans.Runtime.SocketManager.SendingSocketCreator(IPEndPoint target)
+   在 Orleans.Runtime.LRU`2.Get(TKey key)
+   在 Orleans.Runtime.Messaging.SiloMessageSender.GetSendingSocket(Message msg, Socket& socket, SiloAddress& targetSilo, String& error)
+[2017-09-25 10:08:07.806 GMT    23	INFO   	101016	Runtime.Messaging.SiloMessageSender/AppMsgsSender_0	10.1.10.102:0]	Silo S10.1.10.102:29370:244030078 is dropping message: S10.1.10.102:29370:244030078. Reason = Unrecoverable Rejection (info:  System.ArgumentException: MembershipTableGrain cannot run without Seed node - please check your silo configuration file and make sure it specifies a SeedNode element.  Alternatively, you may want to use AzureTable for LivenessType.
+参数名: grainId = MembershipTableGrain
+   在 Orleans.Runtime.GrainDirectory.LocalGrainDirectory.CalculateTargetSilo(GrainId grainId, Boolean excludeThisSiloIfStopping)
+   在 Orleans.Runtime.GrainDirectory.LocalGrainDirectory.LocalLookup(GrainId grain, AddressesAndTag& result)
+   在 Orleans.Runtime.Catalog.FastLookup(GrainId grain, AddressesAndTag& addresses)
+   在 Orleans.Runtime.Placement.PlacementRuntimeExtensions.Lookup(IPlacementRuntime this, GrainId grainId)
+   在 Orleans.Runtime.Placement.RandomPlacementDirector.<OnSelectActivation>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Placement.PlacementDirectorsManager.<SelectOrAddActivation>d__9.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Dispatcher.<AddressMessage>d__37.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Orleans.Runtime.Dispatcher.<AsyncSendMessage>d__34.MoveNext()) Response S10.1.10.102:29370:244030078MembershipTableGrain->S10.1.10.102:0:244030078MembershipOracle@S0000000f #2: global::Orleans.IMembershipTableGrain:InitializeMembershipTable()	

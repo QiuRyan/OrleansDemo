@@ -1,0 +1,119 @@
+[2017-09-26 06:04:19.999 GMT     1	INFO   	100313	OutsideRuntimeClient	]	---------- Initializing OutsideRuntimeClient on DESKTOP-0UHC7MM at 10.1.10.102 Client Id = *cli/9ed5cb8f ----------	
+[2017-09-26 06:04:20.014 GMT     1	INFO   	100314	OutsideRuntimeClient	]	---------- Starting OutsideRuntimeClient with runtime Version='1.5.1.0 (Release).' in AppDomain=<AppDomain.Id=1, AppDomain.FriendlyName=Client.exe> Config= 
+ Platform version info:
+   Orleans version: 1.5.1.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: E:\Others\OrleansDemo\Client\bin\Debug\Client.exe.Config
+   GC Type=Client GCLatencyMode=Interactive
+   Host: DESKTOP-0UHC7MM
+   Processor Count: 4
+Client Configuration:
+   Config File Name: E:\Others\OrleansDemo\Client\bin\Debug\ClientConfiguration.xml
+   Start time: 2017-09-26 06:04:20.009 GMT
+   Gateway Provider: Config
+   Gateways[1]:
+      127.0.0.1:30000
+   Preferred Gateway Index: -1
+   GatewayListRefreshPeriod: 00:01:00
+   Preferred Address Family: InterNetwork
+   DNS Host Name: DESKTOP-0UHC7MM
+   Client Name: Client
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides:
+         Runtime ==> Info
+         Application ==> Info
+         AssemblyLoader ==> Warning
+     Trace to Console: True
+     Trace File Name: E:\Others\OrleansDemo\Client\bin\Debug\Client-2017-09-26-06.04.14.701Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 1000
+   Statistics: 
+     MetricsTableWriteInterval: 00:05:00
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+   Messaging:
+       Response timeout: 00:00:30
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Client Sender Buckets: 8192
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Fallback serializer: 
+   .NET: 
+       .NET thread pool sizes - Min: Worker Threads=4 Completion Port Threads=4
+       .NET thread pool sizes - Max: Worker Threads=2047 Completion Port Threads=1000
+   Providers:
+       No providers configured.
+	
+[2017-09-26 06:04:20.063 GMT     4	INFO   	101309	Messaging.GatewayManager	]	Found 1 knownGateways from Gateway listProvider [gwy.tcp://127.0.0.1:30000/0]	
+[2017-09-26 06:04:20.108 GMT     4	INFO   	100908	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:30000/0	10.1.10.102:0]	Connected to gateway at address gwy.tcp://127.0.0.1:30000/0 on trial 0.	
+[2017-09-26 06:04:20.125 GMT    10	INFO   	100000	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:30000/0	10.1.10.102:0]	Starting AsyncAgent Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:30000/0 on managed thread 10	
+[2017-09-26 06:04:20.125 GMT    11	INFO   	100000	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:30000/0	10.1.10.102:0]	Starting AsyncAgent Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:30000/0 on managed thread 11	
+[2017-09-26 06:04:20.294 GMT     7	INFO   	100929	OutsideRuntimeClient	10.1.10.102:0]	---------- Started OutsideRuntimeClient with Global Client ID: C10.1.10.102:0:-244101860*cli/9ed5cb8f@83a304be, client GUID ID: *cli/9ed5cb8f	
+[2017-09-26 06:11:29.521 GMT     4	INFO   	101309	Messaging.GatewayManager	10.1.10.102:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:30000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:30000/0]. Previous refresh time was = 2017/9/26 6:04:20	
+[2017-09-26 06:11:29.588 GMT    12	INFO   	100704	ClientLogStatistics	10.1.10.102:0]	Statistics: ^^^
+Client.ConnectedGatewayCount=1
+Messaging.Expired.AtDispatch.Current=0
+Messaging.Expired.AtInvoke.Current=0
+Messaging.Expired.AtReceive.Current=0
+Messaging.Expired.AtRespond.Current=0
+Messaging.Expired.AtSend.Current=0
+Messaging.Received.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Received.Bytes.Header.Current=664
+Messaging.Received.Bytes.Total.Current=2501
+Messaging.Received.Direction.OneWay.Current=0
+Messaging.Received.Direction.Request.Current=0
+Messaging.Received.Direction.Response.Current=3
+Messaging.Received.Messages.From.S127.0.0.1:30000:0.Current=3
+Messaging.Received.Messages.Total.Current=3
+Messaging.Received.MessageSizeHistogram.Bytes=[128:255]=1, [256:511]=1, [1024:2047]=1, 
+Messaging.Rerouted.OneWay.Current=0
+Messaging.Rerouted.Request.Current=0
+Messaging.Rerouted.Response.Current=0
+Messaging.Sent.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Sent.Bytes.Header.Current=811
+Messaging.Sent.Bytes.Total.Current=948
+Messaging.Sent.Direction.OneWay.Current=0
+Messaging.Sent.Direction.Request.Current=4
+Messaging.Sent.Direction.Response.Current=0
+Messaging.Sent.Messages.To.S127.0.0.1:30000:0.Current=4
+Messaging.Sent.Messages.Total.Current=4
+Messaging.Sent.MessageSizeHistogram.Bytes=[128:255]=3, [256:511]=1, 
+Networking.Sockets.ClientToGateway.Duplex.Closed.Current=0
+Networking.Sockets.ClientToGateway.Duplex.Opened.Current=1
+Runtime.CpuUsage=12.903
+Runtime.DOT.NET.ThreadPool.InUse.CompletionPortThreads=0
+Runtime.DOT.NET.ThreadPool.InUse.WorkerThreads=3
+Runtime.GC.AllocatedBytesInKbPerSec=0.000
+Runtime.GC.GenCollectonCount=gen0=12, gen1=5, gen2=3
+Runtime.GC.GenSizesKb=gen0=3072.00, gen1=2189.62, gen2=2729.91
+Runtime.GC.LargeObjectHeapSizeKb=4669.008
+Runtime.GC.NumberOfInducedGCs=0.000
+Runtime.GC.PercentOfTimeInGC=0.000
+Runtime.GC.PromotedFinalizationMemoryFromGen0Kb=0.367
+Runtime.GC.PromotedMemoryFromGen1Kb=1500.273
+Runtime.GC.TotalMemoryKb=10311
+Runtime.Memory.AvailableMemoryMb=1972
+Runtime.Memory.TotalPhysicalMemoryMb=12288
+Runtime.Threads.AsynchAgent.Messaging.GatewayClientReceiver.Current=1
+Runtime.Threads.AsynchAgent.Messaging.GatewayConnection.Current=1
+Runtime.Threads.AsynchAgent.TotalThreadsCreated.Current=2
+Serialization.BufferPool.AllocatedBuffers.Current=250
+Serialization.BufferPool.BuffersInPool=217
+Serialization.BufferPool.CheckedInBuffers.Current=262
+Serialization.BufferPool.CheckedOutBuffers.Current=295
+Serialization.BufferPool.DroppedBuffers.Current=0
+Serialization.BufferPool.DroppedTooLargeBuffers.Current=0
+Serialization.BufferPool.InUse.AllocatedAndNotInPool_Buffers=33
+Serialization.BufferPool.InUse.CheckedOutAndNotCheckedIn_Buffers=33
+	
