@@ -1,0 +1,11 @@
+/Client/bin
+/Client/obj
+/Demo/obj
+/Demo/bin
+/Demo.Interface/obj
+/Demo.Interface/bin
+/Demo.Lib/obj
+/Demo.Lib/bin
+obj
+bin
+/packages
