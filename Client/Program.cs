@@ -1,41 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using Demo.Interface;
 using Demo.Lib;
 using Orleans;
-using System.Configuration;
 
 namespace Client
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             GrainClient.Initialize();
 
             while (true)
-            { 
+            {
                 Console.Write("请输入用户的手机号：");
-                var mobileNumber = Console.ReadLine();
-                var userService = GrainClient.GrainFactory.GetGrain<IUser>(Guid.NewGuid());
-                string userId = userService.GetUserByCellphone(mobileNumber).Result?.UserIdentifier;
-                Console.WriteLine($"UserIdentifier:{userId},Cellphone:{mobileNumber}");
+                string cellPhone = Console.ReadLine();
+                IUser user = GrainClient.GrainFactory.GetGrain<IUser>(Guid.NewGuid());
+                string userId = user.GetUserByCellphone(cellPhone).Result?.UserIdentifier;
+                Console.WriteLine($"UserIdentifier:{userId},Cellphone:{cellPhone}");
 
                 Console.ReadKey();
 
-                Console.WriteLine("Userinfo");
-                Console.WriteLine("UserIdentifier                                         Cellphone");
-                Console.WriteLine("----------------------------------------------------");
-                List<UserInfo> users = userService.GetAllUser().Result;
-                foreach (UserInfo userInfo in users)
+                Console.Write("请输入新的手机号：");
+                string newCellphone = Console.ReadLine();
+                UserInfo userInfo = user.UpdateUserCellphoneById(new UserInfo { Cellphone = newCellphone, UserIdentifier = userId }).Result;
+
+                if (userInfo == null)
                 {
-                    Console.WriteLine($"{userInfo.UserIdentifier}  | {userInfo.Cellphone}");
+                    Console.Write("用户不存在,请输入正确的手机号");
+                    return;
                 }
-                Console.WriteLine("----------------------------------------------------");
+                Console.WriteLine($"新用户信息:UserIdentifier:{userInfo.UserIdentifier},Cellphone:{userInfo.Cellphone}");
 
                 Console.ReadKey();
             }
